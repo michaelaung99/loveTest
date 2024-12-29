@@ -29,6 +29,24 @@
             color: #ff6b6b;
             animation: fadeIn 2s ease-in-out;
         }
+        .intro {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: popIn 1.5s ease-in-out;
+        }
+        .intro h2 {
+            font-size: 1.8rem;
+            color: #333;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            color: #666;
+        }
         section {
             padding: 40px 20px;
         }
@@ -71,12 +89,20 @@
             0% { transform: translateY(50px); opacity: 0; }
             100% { transform: translateY(0); opacity: 1; }
         }
+        @keyframes popIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Happy New Year, My Love!</h1>
     </header>
+    <div class="intro">
+        <h2>Welcome, My Dearest</h2>
+        <p>This small creation is a heartfelt gift to show how much you mean to me. Though we haven’t met, our connection brings warmth to my heart. Let’s embrace the new year with smiles and hope. 💖</p>
+    </div>
     <section>
         <p>Hello, my dearest. This website is just a small way to show you how much I appreciate you and look forward to a beautiful New Year together. ❤️</p>
         <div class="countdown" id="countdown"></div>
